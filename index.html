@@ -16,14 +16,15 @@
         <div class="brandname">K.A RENTALS</div>
       </div>
       <nav class="navcenter">
-        <a href="#services">SELF-DRIVE</a>
-        <a href="#services">PCO</a>
-        <a href="#services">AIRPORT TRANSFERS</a>
+        <a href="#services">SELF DRIVE HIRE</a>
+        <a href="#pco">PCO</a>
+        <a href="#airport">AIRPORT TRANSFERS</a>
       </nav>
       <div class="actions">
         <button class="book-btn">Book Now</button>
       </div>
     </div>
+    <div class="header-banner">BOOK WITH US NOW</div>
   </header>
 
   <!-- Hero -->
@@ -37,7 +38,7 @@
     </div>
   </section>
 
-  <!-- Overlapping Services -->
+  <!-- Services (overlapping hero) -->
   <section id="services" class="services">
     <div class="container">
       <div class="grid">
@@ -57,17 +58,16 @@
           <div class="imgbox"><img src="assets-home/service-airport.png" alt="Airport Transfers" /></div>
           <h3>AIRPORT TRANSFERS</h3>
           <p>Luxury, punctual transfers to and from major airports.</p>
-          <a class="cta" href="#">Book Now</a>
+          <a class="cta" href="#airport">Book Now</a>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- SDH Fleet Carousel -->
-  <section id="fleet" class="section">
-    <div class="container">
-      <div class="eyebrow">Fleet</div>
-      <h2 class="heading">SDH Fleet</h2>
+  <!-- Luxury Rentals Carousel -->
+  <section id="fleet" class="section-tight">
+    <div class="container" style="text-align:center">
+      <div class="title-box">LUXURY RENTALS</div>
       <p class="sub">Flagship vehicles curated for style, comfort and reliability.</p>
       <div class="carousel">
         <p class="note">In line with our company policies, every hire includes comprehensive insurance coverage for each individual driver.</p>
@@ -98,10 +98,10 @@
   </section>
 
   <!-- Membership -->
-  <section id="membership" class="section membership">
+  <section id="membership" class="section-tight membership">
     <div class="container">
-      <div class="eyebrow">Membership</div>
-      <h2 class="heading">Membership</h2>
+      <h2 class="heading">MEMBERSHIP</h2>
+      <p class="tagline">Unlock exclusive benefits tailored for every journey</p>
       <div class="tiers">
         <article class="tier volt">
           <img src="assets-home/volt.png" alt="Volt Access">
@@ -120,47 +120,66 @@
         <article class="tier platinum">
           <img src="assets-home/platinum.png" alt="Platinum">
           <h3>PLATINUM EXPERIENCE</h3>
-          <p>OUR MOST EXCLUSIVE TIER. VIP SUPPORT AND LUXURY UPGRADES.</p>
+          <p>OUR MOST EXCLUSIVE TIER — VIP SUPPORT & LUXURY UPGRADES.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- PCO Section -->
-  <section id="pco" class="pco-section">
+  <!-- PCO Rentals -->
+  <section id="pco" class="pco-section section-tight">
     <div class="container">
       <div class="pco-card">
-        <h2>PCO</h2>
+        <h2>PCO RENTALS</h2>
         <img src="assets-home/pco-vehicle.png" alt="PCO Vehicle" />
-        <ul>
-          <li>1 MONTH MINIMUM CONTRACT</li>
-          <li>12 MONTH MAXIMUM CONTRACT</li>
-          <li>PCO LICENSE REQUIRED</li>
-          <li>DRIVING LICENSE REQUIRED</li>
-          <li>UNLIMITED MILEAGE INCLUDED</li>
-        </ul>
+        <div class="pco-bullets">
+          <div class="pco-bullet">1 MONTH MINIMUM CONTRACT</div>
+          <div class="pco-bullet">12 MONTH MAXIMUM CONTRACT</div>
+          <div class="pco-bullet">PCO LICENSE REQUIRED</div>
+          <div class="pco-bullet">DRIVING LICENSE REQUIRED</div>
+          <div class="pco-bullet">UNLIMITED MILEAGE INCLUDED</div>
+        </div>
       </div>
-      <button class="book-btn">BOOK NOW</button>
+      <button class="book-btn" style="margin-top:18px">BOOK NOW</button>
     </div>
   </section>
 
-  <!-- Why Choose Section -->
-  <section id="why" class="why">
+  <!-- Airport Transfers Form -->
+  <section id="airport" class="airport section-tight">
     <div class="container">
-      <h2 class="heading" style="margin-bottom:18px">Why Choose K.A Rentals?</h2>
+      <h2 class="heading">AIRPORT TRANSFERS</h2>
+      <div class="card">
+        <form onsubmit="event.preventDefault(); alert('Thanks! We\'ll get back to you with a quote.');">
+          <div>
+            <label for="pickup">Pick-up Location (Full Address)</label>
+            <input id="pickup" name="pickup" type="text" placeholder="e.g., 10 Downing St, London SW1A 2AA" required>
+          </div>
+          <div>
+            <label for="dropoff">Drop-off Location (Full Address)</label>
+            <input id="dropoff" name="dropoff" type="text" placeholder="e.g., Heathrow Terminal 5, TW6 2GA" required>
+          </div>
+          <button class="btn" type="submit">Get Quote</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose -->
+  <section id="why" class="why section-tight">
+    <div class="container">
       <div class="grid">
-        <div class="point"><img src="assets-home/volt.png" alt=""><h4>24/7 Support</h4><p>We’re here around the clock to keep you moving.</p></div>
-        <div class="point"><img src="assets-home/apex.png" alt=""><h4>Transparent Pricing</h4><p>Clear daily rates with no hidden extras.</p></div>
-        <div class="point"><img src="assets-home/platinum.png" alt=""><h4>Easy Booking</h4><p>Reserve online in minutes with secure checkout.</p></div>
-        <div class="point"><img src="assets-home/volt.png" alt=""><h4>Maintenance Included</h4><p>Regular servicing to manufacturer standards.</p></div>
-        <div class="point"><img src="assets-home/apex.png" alt=""><h4>Airport Delivery</h4><p>Collection/drop-off available on request.</p></div>
+        <div class="point"><img src="assets-home/support.png" alt=""><h4>24/7 SUPPORT</h4><p>We’re here around the clock to keep you moving.</p></div>
+        <div class="point"><img src="assets-home/pricing.png" alt=""><h4>TRANSPARENT PRICING</h4><p>Clear daily rates with no hidden extras.</p></div>
+        <div class="point"><img src="assets-home/booking.png" alt=""><h4>EASY BOOKING</h4><p>Reserve online in minutes with secure checkout.</p></div>
+        <div class="point"><img src="assets-home/maintenance.png" alt=""><h4>MAINTENANCE INCLUDED</h4><p>Regular servicing to manufacturer standards.</p></div>
+        <div class="point"><img src="assets-home/delivery.png" alt=""><h4>AIRPORT DELIVERY</h4><p>Collection/drop-off available on request.</p></div>
       </div>
     </div>
   </section>
 
   <!-- Info Footer -->
-  <section class="info">
-    <div class="container grid">
+  <section class="info section-tight">
+    <div class="container grid" style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px">
       <div>
         <h4>Frequently Asked Questions</h4>
         <ul>
