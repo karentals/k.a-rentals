@@ -2,119 +2,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>K.A Rentals | Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K.A RENTALS | Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="header">
-  <div class="container navbar">
-    <div class="leftbrand">
-      <img src="assets-home/badge.png" alt="badge" width="40" height="40">
-      <div class="brandname">K.A Rentals</div>
-    </div>
-    <div class="navcenter">
-      <a href="#services">Our Services</a>
-      <a href="#fleet">Signature Rentals</a>
-      <a href="#why">Why K.A Rentals</a>
-    </div>
-    <button class="book-btn">Book Now</button>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="container grid">
-    <div>
-      <h1>Luxury, Flexibility, and <span style="color:var(--mint)">Comfort</span> on the Road</h1>
-      <p>Premium rentals tailored for every journey.</p>
-    </div>
-    <img class="logo-right" src="assets-home/logo-right.png" alt="K.A Rentals logo">
-  </div>
-</section>
-
-<!-- Overlapping Services row -->
-<section id="services" class="services">
-  <div class="container">
-    <div class="grid">
-      <article class="card">
-        <h3>PCO Rentals</h3>
-        <p>Licensed vehicles for ride‑hailing professionals.</p>
-        <a class="cta" href="#">Book Now</a>
-      </article>
-      <article class="card">
-        <h3>Self‑Drive Hire</h3>
-        <p>Top‑tier vehicles with flexible terms and simple booking.</p>
-        <a class="cta" href="#">Book Now</a>
-      </article>
-      <article class="card">
-        <h3>Airport Transfers</h3>
-        <p>Luxury, punctual transfers to and from major airports.</p>
-        <a class="cta" href="#">Book Now</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="fleet" class="section fleet">
-  <div class="container">
-    <h2 class="heading">Signature Rentals</h2>
-    <p class="sub">Flagship vehicles curated for style, comfort and reliability.</p>
-    <p class="note">In line with our company policies, every hire includes comprehensive insurance coverage for each individual driver.</p>
-    <div class="grid">
-      <article class="item">
-        <div class="imgbox"><img src="assets-home/bmw2.png" alt="BMW 2 Series Gran Coupé"></div>
-        <div class="meta"><div class="title">BMW 2 Series Gran Coupé</div><div class="rate">£XX/day</div></div>
-      </article>
-      <article class="item">
-        <div class="imgbox"><img src="assets-home/bmwx3.png" alt="BMW X3"></div>
-        <div class="meta"><div class="title">BMW X3</div><div class="rate">£XX/day</div></div>
-      </article>
-      <article class="item">
-        <div class="imgbox"><img src="assets-home/cla.png" alt="Mercedes‑Benz CLA"></div>
-        <div class="meta"><div class="title">Mercedes‑Benz CLA</div><div class="rate">£XX/day</div></div>
-      </article>
-      <article class="item">
-        <div class="imgbox"><img src="assets-home/tesla.png" alt="Tesla Model 3"></div>
-        <div class="meta"><div class="title">Tesla Model 3</div><div class="rate">£XX/day</div></div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- Why Choose K.A Rentals -->
-<section id="why" class="why">
-  <div class="container">
-    <h2 class="heading">Why Choose K.A Rentals?</h2>
-    <div class="grid">
-      <div class="point">
-        <img src="assets-home/support.png" alt="Support">
-        <h3>24/7 Support</h3>
-        <p>Always here to assist you whenever you need us.</p>
+  <!-- Header -->
+  <header class="header">
+    <div class="container navbar">
+      <div class="leftbrand">
+        <img src="assets-home/badge.png" alt="badge" width="40" height="40" />
+        <div class="brandname">K.A RENTALS</div>
       </div>
-      <div class="point">
-        <img src="assets-home/fleet.png" alt="Fleet">
-        <h3>Premium Fleet</h3>
-        <p>Vehicles maintained to the highest standards for comfort and reliability.</p>
-      </div>
-      <div class="point">
-        <img src="assets-home/trust.png" alt="Trust">
-        <h3>Trusted Service</h3>
-        <p>Transparent pricing and secure, reliable booking.</p>
+      <nav class="navcenter" aria-label="Primary">
+        <a href="#services">SELF-DRIVE</a>
+        <a href="#services">PCO</a>
+        <a href="#services">AIRPORT TRANSFERS</a>
+      </nav>
+      <div class="actions">
+        <button class="book-btn">Book Now</button>
       </div>
     </div>
-  </div>
-</section>
+  </header>
 
-<section class="cta-band">
-  <div class="container">
-    <h3>Ready to hit the road?</h3>
-    <a href="#fleet" class="btn">Browse Signature Rentals</a>
-  </div>
-</section>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container grid">
+      <div>
+        <h1>Luxury, Flexibility, and <span style="color:var(--mint)">Comfort</span> on the Road</h1>
+        <p>Premium rentals tailored for every journey.</p>
+      </div>
+      <img class="logo-right" src="assets-home/logo-right.png" alt="K.A Rentals logo" />
+    </div>
+  </section>
 
-<footer>
-  <p style="text-align:center;padding:20px;color:white;background:var(--deep)">&copy; 2025 K.A Rentals. All Rights Reserved.</p>
-</footer>
+  <!-- Overlapping Services row -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="grid">
+        <article class="card">
+          <div class="imgbox"><img src="assets-home/service-selfdrive.png" alt="Self Drive" /></div>
+          <h3>SELF-DRIVE HIRE</h3>
+          <p>Drive premium cars on your terms with flexible hire options.</p>
+          <a class="cta" href="#">Book Now</a>
+        </article>
+        <article class="card">
+          <div class="imgbox"><img src="assets-home/service-pco.png" alt="PCO" /></div>
+          <h3>PCO RENTALS</h3>
+          <p>Fully licensed vehicles ready for ride-hailing professionals.</p>
+          <a class="cta" href="#">Book Now</a>
+        </article>
+        <article class="card">
+          <div class="imgbox"><img src="assets-home/service-airport.png" alt="Airport Transfers" /></div>
+          <h3>AIRPORT TRANSFERS</h3>
+          <p>Luxury, punctual transfers to and from major airports.</p>
+          <a class="cta" href="#">Book Now</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signature Rentals: Horizontal Carousel -->
+  <section id="fleet" class="section">
+    <div class="container">
+      <div class="eyebrow">Featured</div>
+      <h2 class="heading">Signature Rentals</h2>
+      <p class="sub">Flagship vehicles curated for style, comfort and reliability.</p>
+      <div class="carousel">
+        <p class="note">In line with our company policies, every hire includes comprehensive insurance coverage for each individual driver.</p>
+        <div class="carousel-track" id="fleetTrack">
+          <article class="car-card">
+            <div class="car-img"><img src="assets-home/bmw2.png" alt="BMW 2 Series" /></div>
+            <div class="car-meta"><div class="car-title">BMW 2 Series Gran Coupé</div><div class="car-rate">£XX/day</div></div>
+          </article>
+          <article class="car-card">
+            <div class="car-img"><img src="assets-home/bmwx3.png" alt="BMW X3" /></div>
+            <div class="car-meta"><div class="car-title">BMW X3</div><div class="car-rate">£XX/day</div></div>
+          </article>
+          <article class="car-card">
+            <div class="car-img"><img src="assets-home/cla.png" alt="Mercedes CLA" /></div>
+            <div class="car-meta"><div class="car-title">Mercedes-Benz CLA</div><div class="car-rate">£XX/day</div></div>
+          </article>
+          <article class="car-card">
+            <div class="car-img"><img src="assets-home/tesla.png" alt="Tesla Model 3" /></div>
+            <div class="car-meta"><div class="car-title">Tesla Model 3</div><div class="car-rate">£XX/day</div></div>
+          </article>
+          <article class="car-card">
+            <div class="car-img"><img src="assets-home/audi.png" alt="Audi A3" /></div>
+            <div class="car-meta"><div class="car-title">Audi A3</div><div class="car-rate">£XX/day</div></div>
+          </article>
+          <article class="car-card">
+            <div class="car-img"><img src="assets-home/range.png" alt="Range Rover Evoque" /></div>
+            <div class="car-meta"><div class="car-title">Range Rover Evoque</div><div class="car-rate">£XX/day</div></div>
+          </article>
+        </div>
+        <div class="nav">
+          <button onclick="document.getElementById('fleetTrack').scrollBy({left:-380,behavior:'smooth'})">&#8249;</button>
+          <button onclick="document.getElementById('fleetTrack').scrollBy({left:380,behavior:'smooth'})">&#8250;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership -->
+  <section id="membership" class="section membership">
+    <div class="container">
+      <div class="eyebrow">Membership</div>
+      <h2 class="heading">Choose Your Tier</h2>
+      <p class="sub">Unlock benefits, better rates and priority support as you grow with us.</p>
+      <div class="tiers">
+        <article class="tier volt">
+          <img src="assets-home/volt.png" alt="Volt Access">
+          <div>
+            <h3>Volt Access ⚡</h3>
+            <p>Perfect for new customers — fast onboarding and friendly entry pricing.</p>
+          </div>
+        </article>
+        <article class="tier apex">
+          <img src="assets-home/apex.png" alt="Apex">
+          <div>
+            <h3>Apex ⭐</h3>
+            <p>After 30+ days with us — enhanced perks, preferred rates and upgrades.</p>
+          </div>
+        </article>
+        <article class="tier platinum">
+          <img src="assets-home/platinum.png" alt="Platinum">
+          <div>
+            <h3>Platinum Experience 💎</h3>
+            <p>Our most exclusive tier — VIP support, luxury upgrades and priority booking.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose (bottom, small headings) -->
+  <section id="why" class="why">
+    <div class="container">
+      <h2 class="heading" style="margin-bottom:18px">Why Choose K.A Rentals?</h2>
+      <div class="grid">
+        <div class="point"><img src="assets-home/support.png" alt=""><h4>24/7 Support</h4><p>We’re here around the clock to keep you moving.</p></div>
+        <div class="point"><img src="assets-home/pricing.png" alt=""><h4>Transparent Pricing</h4><p>Clear daily rates with no hidden extras.</p></div>
+        <div class="point"><img src="assets-home/booking.png" alt=""><h4>Easy Booking</h4><p>Reserve online in minutes with secure checkout.</p></div>
+        <div class="point"><img src="assets-home/maintenance.png" alt=""><h4>Maintenance Included</h4><p>Regular servicing to manufacturer standards.</p></div>
+        <div class="point"><img src="assets-home/delivery.png" alt=""><h4>Airport Delivery</h4><p>Collection/drop-off available on request.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info: FAQs + Contact -->
+  <section class="info">
+    <div class="container grid">
+      <div>
+        <h4>Frequently Asked Questions</h4>
+        <ul>
+          <li><strong>Is insurance included?</strong> Yes, comprehensive insurance per driver is included.</li>
+          <li><strong>What documents do I need?</strong> Full UK licence (2+ years), photo ID, proof of address (90 days), DVLA check code.</li>
+          <li><strong>Can I extend my hire?</strong> Yes — contact us 24 hours before your return time.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Phone: 020 1234 5678</p>
+        <p>Email: info@karentals.co.uk</p>
+        <p>Location: London, UK</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon–Fri: 8am–7pm</p>
+        <p>Sat: 9am–5pm</p>
+        <p>Sun: By appointment</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h3>Ready to hit the road?</h3>
+      <a href="#services" class="btn">Book Your Ride</a>
+    </div>
+  </section>
+
+  <footer>
+    <p style="text-align:center;padding:18px;color:white;background:var(--deep)">&copy; 2025 K.A Rentals. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Optional: allow arrow keys to scroll carousel for desktop UX
+    const track = document.getElementById('fleetTrack');
+    window.addEventListener('keydown', (e)=>{
+      if(e.key==='ArrowRight'){ track.scrollBy({left:380, behavior:'smooth'}); }
+      if(e.key==='ArrowLeft'){ track.scrollBy({left:-380, behavior:'smooth'}); }
+    });
+  </script>
 </body>
 </html>
