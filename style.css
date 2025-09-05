@@ -21,19 +21,43 @@ body{background:white;color:#0e1b2a;line-height:1.5}
 .hero .cta{font-size:18px}
 .hero .watermark{position:absolute;right:40px;top:20px;opacity:0.4;max-width:280px}
 
+/* Signature Fleet */
+.fleet{padding:60px 0;background:#f7f9fc}
+.fleet .heading{text-align:center;font-size:32px;color:var(--deep);margin-bottom:10px}
+.fleet .insurance-note{text-align:center;font-size:14px;color:var(--muted);margin-bottom:30px}
+.fleet .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.fleet .item{background:white;padding:10px;text-align:center;border:2px solid var(--deep);box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+.fleet .item img{max-width:100%;height:auto}
+.fleet .title{font-weight:700;color:var(--deep);margin-top:8px}
+.fleet .rate{color:var(--teal);font-weight:700;margin-top:4px}
+
 /* Services */
-.services{padding:60px 0;background:#f7f9fc}
+.services{padding:60px 0;background:white}
 .services .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .services .card{background:white;padding:20px;text-align:center;border:1px solid #ddd;box-shadow:0 4px 10px rgba(0,0,0,0.05)}
 .services .card h3{color:var(--deep);margin-bottom:10px}
 .services .card p{color:var(--muted);margin-bottom:10px}
 .services .card .cta{padding:8px 16px}
 
+/* Membership */
+.membership{padding:60px 0;background:#f7f9fc}
+.membership .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
+.membership .card{background:white;padding:20px;text-align:center;border:1px solid #ddd;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+.membership .card h3{color:var(--deep);margin-bottom:10px}
+.membership .platinum{width:100%}
+
+/* Why Choose */
+.why-choose{padding:60px 0;background:white;text-align:center}
+.why-choose h2{color:var(--deep);margin-bottom:20px}
+.why-choose .points{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.why-choose .point{padding:20px;border:1px solid #ddd;box-shadow:0 2px 6px rgba(0,0,0,0.05)}
+
 /* Footer */
 .footer{text-align:center;padding:40px;background:var(--deep);color:white;margin-top:60px}
 
-@media(max-width:800px){
+@media(max-width:900px){
+  .fleet .grid{grid-template-columns:repeat(2,1fr)}
   .services .grid{grid-template-columns:1fr}
-  .navlinks{flex-wrap:wrap;justify-content:center}
-  .hero .watermark{right:10px;top:10px;max-width:180px}
+  .membership .grid2{grid-template-columns:1fr}
+  .why-choose .points{grid-template-columns:1fr}
 }
