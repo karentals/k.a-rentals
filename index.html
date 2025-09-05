@@ -2,17 +2,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>K.A RENTALS | Home</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <!-- Header -->
   <header class="header">
     <div class="container navbar">
       <div class="leftbrand">
-        <img src="assets-home/badge.png" alt="badge" width="40" height="40" />
+        <img src="assets-home/badge.png" alt="K.A badge" width="40" height="40"/>
         <div class="brandname">K.A RENTALS</div>
       </div>
       <nav class="navcenter">
@@ -21,41 +21,41 @@
         <a href="#airport">AIRPORT TRANSFERS</a>
       </nav>
       <div class="actions">
-        <button class="book-btn">Book Now</button>
+        <button class="book-btn">BOOK NOW</button>
       </div>
     </div>
-    <div class="header-banner">BOOK WITH US NOW</div>
+    <div class="header banner">BOOK WITH US NOW</div>
   </header>
 
   <!-- Hero -->
   <section class="hero">
     <div class="container grid">
-      <div>
+      <div class="reveal">
         <h1>Luxury, Flexibility, and <span style="color:var(--mint)">Comfort</span> on the Road</h1>
         <p>Premium rentals tailored for every journey.</p>
       </div>
-      <img class="logo-right" src="assets-home/logo-right.png" alt="K.A Rentals logo" />
+      <img class="logo-right reveal" src="assets-home/logo-right.png" alt="K.A Rentals logo watermark"/>
     </div>
   </section>
 
-  <!-- Services (overlapping hero) -->
+  <!-- Services (overlap) -->
   <section id="services" class="services">
-    <div class="container">
+    <div class="container reveal">
       <div class="grid">
         <article class="card">
-          <div class="imgbox"><img src="assets-home/service-selfdrive.png" alt="Self Drive" /></div>
+          <div class="imgbox"><img src="assets-home/service-selfdrive.png" alt="Self Drive"/></div>
           <h3>SELF-DRIVE HIRE</h3>
           <p>Drive premium cars on your terms with flexible hire options.</p>
-          <a class="cta" href="#">Book Now</a>
+          <a class="cta" href="#fleet">Book Now</a>
         </article>
         <article class="card">
-          <div class="imgbox"><img src="assets-home/service-pco.png" alt="PCO" /></div>
+          <div class="imgbox"><img src="assets-home/service-pco.png" alt="PCO Rentals"/></div>
           <h3>PCO RENTALS</h3>
           <p>Fully licensed vehicles ready for ride-hailing professionals.</p>
-          <a class="cta" href="#">Book Now</a>
+          <a class="cta" href="#pco">Book Now</a>
         </article>
         <article class="card">
-          <div class="imgbox"><img src="assets-home/service-airport.png" alt="Airport Transfers" /></div>
+          <div class="imgbox"><img src="assets-home/service-airport.png" alt="Airport Transfers"/></div>
           <h3>AIRPORT TRANSFERS</h3>
           <p>Luxury, punctual transfers to and from major airports.</p>
           <a class="cta" href="#airport">Book Now</a>
@@ -64,21 +64,21 @@
     </div>
   </section>
 
-  <!-- MEMBERSHIP -->
-  <section id="membership" class="section-tight membership">
-    <div class="container">
+  <!-- Membership -->
+  <section id="membership" class="section-tight">
+    <div class="container reveal">
       <h2 class="heading">MEMBERSHIP</h2>
       <p class="tagline">UNLOCK EXCLUSIVE BENEFITS TAILORED FOR EVERY JOURNEY</p>
       <div class="tiers">
-        <article class="tier volt">
-          <img src="assets-home/volt.png" alt="Volt Access">
+        <article class="tier">
+          <img src="assets-home/icon-pricing.png" alt="Volt badge" width="70" height="70"/>
           <div>
             <h3>VOLT ACCESS</h3>
             <p>FOR NEW MEMBERS. ENTRY-LEVEL SERVICE PACKAGE.</p>
           </div>
         </article>
-        <article class="tier apex">
-          <img src="assets-home/apex.png" alt="Apex">
+        <article class="tier">
+          <img src="assets-home/icon-support.png" alt="Apex badge" width="70" height="70"/>
           <div>
             <h3>APEX MEMBERSHIP</h3>
             <p>DISCOUNTED RENTALS FOR REGULAR DRIVERS (28+ DAYS).</p>
@@ -86,7 +86,7 @@
           </div>
         </article>
         <article class="tier platinum">
-          <img src="assets-home/platinum.png" alt="Platinum">
+          <img src="assets-home/icon-easy.png" alt="Platinum badge" width="70" height="70"/>
           <h3>PLATINUM EXPERIENCE</h3>
           <p>OUR MOST EXCLUSIVE TIER — VIP SUPPORT & LUXURY UPGRADES.</p>
         </article>
@@ -94,103 +94,114 @@
     </div>
   </section>
 
-  <!-- LUXURY RENTALS -->
+  <!-- Luxury Rentals -->
   <section id="fleet" class="section-tight">
     <div class="container" style="text-align:center">
-      <h2 class="heading-xl">LUXURY RENTALS</h2>
-      <p class="sub">Explore our premium self-drive fleet — all hires include comprehensive insurance.</p>
-      <div class="carousel">
-        <div class="carousel-track" id="fleetTrack">
-          <article class="car-card">
-            <div class="car-img"><img src="assets-home/bmw2.png" alt="BMW 2 Series" /></div>
-            <div class="car-meta"><div class="car-title">BMW 2 Series Gran Coupé</div><div class="car-rate">£XX/day</div></div>
+      <h2 class="heading-xl reveal">LUXURY RENTALS</h2>
+      <p class="sub reveal">Explore our premium self-drive fleet — all hires include comprehensive insurance.</p>
+      <div class="carousel reveal">
+        <div class="track" id="fleetTrack">
+          <article class="car">
+            <div class="car-img"><img src="assets-home/bmw2.png" alt="BMW 2 Series"/></div>
+            <div class="meta"><div><strong>BMW 2 SERIES GRAN COUPÉ</strong></div><div class="rate">£XX/DAY</div></div>
           </article>
-          <article class="car-card">
-            <div class="car-img"><img src="assets-home/bmwx3.png" alt="BMW X3" /></div>
-            <div class="car-meta"><div class="car-title">BMW X3</div><div class="car-rate">£XX/day</div></div>
+          <article class="car">
+            <div class="car-img"><img src="assets-home/bmwx3.png" alt="BMW X3"/></div>
+            <div class="meta"><div><strong>BMW X3</strong></div><div class="rate">£XX/DAY</div></div>
           </article>
-          <article class="car-card">
-            <div class="car-img"><img src="assets-home/cla.png" alt="Mercedes CLA" /></div>
-            <div class="car-meta"><div class="car-title">Mercedes-Benz CLA</div><div class="car-rate">£XX/day</div></div>
+          <article class="car">
+            <div class="car-img"><img src="assets-home/cla.png" alt="Mercedes CLA"/></div>
+            <div class="meta"><div><strong>MERCEDES-BENZ CLA</strong></div><div class="rate">£XX/DAY</div></div>
           </article>
-          <article class="car-card">
-            <div class="car-img"><img src="assets-home/tesla.png" alt="Tesla Model 3" /></div>
-            <div class="car-meta"><div class="car-title">Tesla Model 3</div><div class="car-rate">£XX/day</div></div>
+          <article class="car">
+            <div class="car-img"><img src="assets-home/tesla.png" alt="Tesla Model 3"/></div>
+            <div class="meta"><div><strong>TESLA MODEL 3</strong></div><div class="rate">£XX/DAY</div></div>
           </article>
-        </div>
-        <div class="nav">
-          <button onclick="document.getElementById('fleetTrack').scrollBy({left:-380,behavior:'smooth'})">&#8249;</button>
-          <button onclick="document.getElementById('fleetTrack').scrollBy({left:380,behavior:'smooth'})">&#8250;</button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PCO Rentals (compact) -->
-  <section id="pco" class="pco-compact section-tight">
+  <!-- PCO Rentals -->
+  <section id="pco" class="pco">
     <div class="container">
-      <div class="card">
+      <div class="card reveal">
         <h2>PCO RENTALS</h2>
-        <div class="slider-wrap"><div class="length-label">CONTRACT LENGTH: <span id="pcoMonthsVal">1</span> MONTH<span id="pcoPlural" style="display:none">S</span></div><input id="pcoMonths" class="pco-slider" type="range" min="1" max="12" step="1" value="1"></div><div class="row">
-          <div class="pill">1 MONTH MINIMUM CONTRACT</div>
-          <div class="pill">12 MONTH MAXIMUM CONTRACT</div>
-          <div class="pill">PCO LICENSE REQUIRED</div>
-          <div class="pill">DRIVING LICENSE REQUIRED</div>
-          <div class="pill">UNLIMITED MILEAGE INCLUDED</div>
+        <div class="slider-wrap">
+          <div class="length">CONTRACT LENGTH: <span id="monthsVal">1</span> MONTH<span id="plural" style="display:none">S</span></div>
+          <input id="months" class="slider" type="range" min="1" max="12" step="1" value="1">
         </div>
-        <div style="margin-top:14px"><button class="book-btn">BOOK NOW</button></div>
+        <div class="reqs">
+          <div class="req">🪪 PCO LICENSE REQUIRED</div>
+          <div class="req">🚗 DRIVING LICENSE REQUIRED</div>
+          <div class="req">🔄 UNLIMITED MILEAGE INCLUDED</div>
+        </div>
+        <div style="margin-top:14px"><button id="pcoBook" class="book-btn">BOOK NOW</button></div>
       </div>
     </div>
   </section>
 
-  <!-- Airport Transfers (strong) -->
-  <section id="airport" class="airport-strong section-tight">
+  <!-- Airport Transfers -->
+  <section id="airport" class="air">
     <div class="container">
-      <div class="card">
+      <div class="card reveal">
         <h2>AIRPORT TRANSFERS</h2>
-        <form onsubmit="event.preventDefault(); alert('Thanks! We\'ll get back to you with a quote.');">
+        <label class="label">📍 Pick-up Location</label>
+        <input id="a_pick" class="input" type="text" placeholder="e.g., 10 Downing St, London SW1A 2AA">
+        <label class="label">🎯 Drop-off Location</label>
+        <input id="a_drop" class="input" type="text" placeholder="e.g., Heathrow Terminal 5, TW6 2GA">
+        <div class="row">
           <div>
-            <label for="pickup">Pick-up Location (Full Address)</label>
-            <input id="pickup" name="pickup" type="text" placeholder="e.g., 10 Downing St, London SW1A 2AA" required>
+            <label class="label">👥 Passengers</label>
+            <select id="a_pax" class="select"><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select>
           </div>
           <div>
-            <label for="dropoff">Drop-off Location (Full Address)</label>
-            <input id="dropoff" name="dropoff" type="text" placeholder="e.g., Heathrow Terminal 5, TW6 2GA" required>
+            <label class="label">📅 Date</label>
+            <input id="a_date" class="input" type="date">
           </div>
-          <button class="btn" type="submit">Get Quote</button>
-        </form>
+        </div>
+        <div class="row">
+          <div>
+            <label class="label">⏰ Time</label>
+            <input id="a_time" class="input" type="time">
+          </div>
+          <div class="controls">
+            <label class="ret"><input id="a_ret" type="checkbox"> Add Return Journey</label>
+            <button id="a_search" class="search-btn" type="button">SEARCH</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Brand badges row -->
+  <!-- Brands row -->
   <section class="brands">
     <div class="container">
       <div class="brand-track" id="brandTrack">
-        <img class="brand-item" src="assets-home/brand-bmw.png" alt="BMW">
-        <img class="brand-item" src="assets-home/brand-mercedes.png" alt="MERCEDES">
-        <img class="brand-item" src="assets-home/brand-tesla.png" alt="TESLA">
-        <img class="brand-item" src="assets-home/brand-kia.png" alt="KIA">
+        <img class="brand-item" src="assets-home/brand-bmw.png" alt="BMW"/>
+        <img class="brand-item" src="assets-home/brand-mercedes.png" alt="MERCEDES"/>
+        <img class="brand-item" src="assets-home/brand-tesla.png" alt="TESLA"/>
+        <img class="brand-item" src="assets-home/brand-kia.png" alt="KIA"/>
       </div>
     </div>
   </section>
 
-  <!-- Why Choose -->
-  <section id="why" class="why section-tight">
-    <div class="container why-frame">
-      <div class="grid">
-        <div class="point"><img src="assets-home/support.png" alt=""><h4>24/7 SUPPORT</h4><p>We’re here around the clock to keep you moving.</p></div>
-        <div class="point"><img src="assets-home/pricing.png" alt=""><h4>TRANSPARENT PRICING</h4><p>Clear daily rates with no hidden extras.</p></div>
-        <div class="point"><img src="assets-home/booking.png" alt=""><h4>EASY BOOKING</h4><p>Reserve online in minutes with secure checkout.</p></div>
-        <div class="point"><img src="assets-home/maintenance.png" alt=""><h4>MAINTENANCE INCLUDED</h4><p>Regular servicing to manufacturer standards.</p></div>
-        <div class="point"><img src="assets-home/delivery.png" alt=""><h4>AIRPORT DELIVERY</h4><p>Collection/drop-off available on request.</p></div>
+  <!-- Why Book With Us -->
+  <section class="why">
+    <div class="container why-frame reveal">
+      <div class="why-grid">
+        <div class="w-card"><div class="glass"><img class="icon" src="assets-home/icon-support.png" alt="Support"/><div class="w-title">24/7 SUPPORT</div><p class="w-desc">We’re here around the clock.</p></div></div>
+        <div class="w-card"><div class="glass"><img class="icon" src="assets-home/icon-pricing.png" alt="Pricing"/><div class="w-title">TRANSPARENT PRICING</div><p class="w-desc">Clear daily rates with no hidden extras.</p></div></div>
+        <div class="w-card"><div class="glass"><img class="icon" src="assets-home/icon-easy.png" alt="Easy"/><div class="w-title">EASY BOOKING</div><p class="w-desc">Reserve in minutes.</p></div></div>
+        <div class="w-card"><div class="glass"><img class="icon" src="assets-home/icon-maintenance.png" alt="Maintenance"/><div class="w-title">MAINTENANCE INCLUDED</div><p class="w-desc">Servicing to manufacturer standards.</p></div></div>
+        <div class="w-card"><div class="glass"><img class="icon" src="assets-home/icon-delivery.png" alt="Delivery"/><div class="w-title">AIRPORT DELIVERY</div><p class="w-desc">Collection/drop-off on request.</p></div></div>
       </div>
     </div>
   </section>
 
   <!-- Info Footer -->
-  <section class="info section-tight">
-    <div class="container grid" style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px">
+  <section class="info">
+    <div class="container grid">
       <div>
         <h4>Frequently Asked Questions</h4>
         <ul>
@@ -217,42 +228,40 @@
   <footer>&copy; 2025 K.A Rentals. All Rights Reserved.</footer>
 
   <script>
-    // Simple keyboard scroll for cars
-    const track = document.getElementById('fleetTrack');
-    window.addEventListener('keydown', (e)=>{
-      if(e.key==='ArrowRight'){ track.scrollBy({left:380, behavior:'smooth'}); }
-      if(e.key==='ArrowLeft'){ track.scrollBy({left:-380, behavior:'smooth'}); }
-    });
-    // Auto-scroll brands slowly (optional)
-    const brandTrack = document.getElementById('brandTrack');
-    let offset = 0;
-    setInterval(()=>{
-      brandTrack.scrollBy({left:280, behavior:'smooth'});
-    }, 3000);
-  </script>
-<script>
-  // --- PCO slider live update ---
-  const monthsInput = document.getElementById('pcoMonths');
-  const monthsVal = document.getElementById('pcoMonthsVal');
-  const monthsPlural = document.getElementById('pcoPlural');
-  if(monthsInput && monthsVal){
-    const syncMonths = ()=>{
-      const v = parseInt(monthsInput.value||'1',10);
-      monthsVal.textContent = v;
-      monthsPlural.style.display = (v===1) ? 'none' : 'inline';
-    };
-    monthsInput.addEventListener('input', syncMonths);
-    syncMonths();
-  }
+    // Reveal animations
+    const io = new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show')}}),{threshold:.14});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
-  // --- Book Now confirmation in PCO ---
-  const pcoBtn = document.querySelector('#pco .book-btn');
-  if(pcoBtn && monthsInput){
-    pcoBtn.addEventListener('click', ()=>{
-      const v = parseInt(monthsInput.value||'1',10);
+    // Fleet carousel keyboard helper
+    const ft = document.getElementById('fleetTrack');
+    window.addEventListener('keydown',e=>{
+      if(e.key==='ArrowRight') ft.scrollBy({left:380,behavior:'smooth'});
+      if(e.key==='ArrowLeft') ft.scrollBy({left:-380,behavior:'smooth'});
+    });
+
+    // PCO slider
+    const m = document.getElementById('months');
+    const mVal = document.getElementById('monthsVal');
+    const mPl = document.getElementById('plural');
+    function sync(){ const v = parseInt(m.value||'1',10); mVal.textContent=v; mPl.style.display = v===1 ? 'none' : 'inline'; }
+    m.addEventListener('input', sync); sync();
+    document.getElementById('pcoBook').addEventListener('click', ()=>{
+      const v = parseInt(m.value||'1',10);
       alert(`You selected a ${v}-month contract for your PCO rental.`);
     });
-  }
-</script>
+
+    // Airport defaults + search
+    const now = new Date();
+    const ad = document.getElementById('a_date');
+    const at = document.getElementById('a_time');
+    ad.value = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+    at.value = `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
+    document.getElementById('a_search').addEventListener('click', ()=>{
+      alert(`Airport transfer request:\nPickup: ${document.getElementById('a_pick').value||'(not set)'}\nDrop-off: ${document.getElementById('a_drop').value||'(not set)'}\nPassengers: ${document.getElementById('a_pax').value}\nDate: ${ad.value} at ${at.value}\nReturn: ${document.getElementById('a_ret').checked ? 'Yes' : 'No'}`);
+    });
+
+    // Brands strip gentle auto-scroll
+    setInterval(()=>{ document.getElementById('brandTrack').scrollBy({left:280,behavior:'smooth'}); }, 3000);
+  </script>
 </body>
 </html>
