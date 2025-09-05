@@ -64,11 +64,11 @@
     </div>
   </section>
 
-  <!-- MEMBERSHIP (moved above Luxury Rentals) -->
+  <!-- MEMBERSHIP -->
   <section id="membership" class="section-tight membership">
     <div class="container">
       <h2 class="heading">MEMBERSHIP</h2>
-      <p class="tagline">Unlock exclusive benefits tailored for every journey</p>
+      <p class="tagline">UNLOCK EXCLUSIVE BENEFITS TAILORED FOR EVERY JOURNEY</p>
       <div class="tiers">
         <article class="tier volt">
           <img src="assets-home/volt.png" alt="Volt Access">
@@ -81,8 +81,8 @@
           <img src="assets-home/apex.png" alt="Apex">
           <div>
             <h3>APEX MEMBERSHIP</h3>
-            <p>AVAILABLE FOR CUSTOMERS WHO HAVE RENTED FOR 28 DAYS PLUS.</p>
-            <div class="apex-note">4-WEEK PACKAGE · SET MILEAGE · DISCOUNTED RATE — EXCLUSIVE TO APEX MEMBERS.</div>
+            <p>DISCOUNTED RENTALS FOR REGULAR DRIVERS (28+ DAYS).</p>
+            <div class="badge">4-WEEK PACKAGE · SET MILEAGE · DISCOUNTED RATE</div>
           </div>
         </article>
         <article class="tier platinum">
@@ -94,7 +94,7 @@
     </div>
   </section>
 
-  <!-- Luxury Rentals (AFTER membership) -->
+  <!-- LUXURY RENTALS -->
   <section id="fleet" class="section-tight">
     <div class="container" style="text-align:center">
       <h2 class="heading-xl">LUXURY RENTALS</h2>
@@ -126,29 +126,28 @@
     </div>
   </section>
 
-  <!-- PCO Rentals -->
-  <section id="pco" class="pco-section section-tight">
+  <!-- PCO Rentals (compact) -->
+  <section id="pco" class="pco-compact section-tight">
     <div class="container">
-      <div class="pco-card">
+      <div class="card">
         <h2>PCO RENTALS</h2>
-        <img src="assets-home/pco-vehicle.png" alt="PCO Vehicle" />
-        <div class="pco-bullets">
-          <div class="pco-bullet">1 MONTH MINIMUM CONTRACT</div>
-          <div class="pco-bullet">12 MONTH MAXIMUM CONTRACT</div>
-          <div class="pco-bullet">PCO LICENSE REQUIRED</div>
-          <div class="pco-bullet">DRIVING LICENSE REQUIRED</div>
-          <div class="pco-bullet">UNLIMITED MILEAGE INCLUDED</div>
+        <div class="slider-wrap"><div class="length-label">CONTRACT LENGTH: <span id="pcoMonthsVal">1</span> MONTH<span id="pcoPlural" style="display:none">S</span></div><input id="pcoMonths" class="pco-slider" type="range" min="1" max="12" step="1" value="1"></div><div class="row">
+          <div class="pill">1 MONTH MINIMUM CONTRACT</div>
+          <div class="pill">12 MONTH MAXIMUM CONTRACT</div>
+          <div class="pill">PCO LICENSE REQUIRED</div>
+          <div class="pill">DRIVING LICENSE REQUIRED</div>
+          <div class="pill">UNLIMITED MILEAGE INCLUDED</div>
         </div>
+        <div style="margin-top:14px"><button class="book-btn">BOOK NOW</button></div>
       </div>
-      <button class="book-btn" style="margin-top:18px">BOOK NOW</button>
     </div>
   </section>
 
-  <!-- Airport Transfers Form -->
-  <section id="airport" class="airport section-tight">
+  <!-- Airport Transfers (strong) -->
+  <section id="airport" class="airport-strong section-tight">
     <div class="container">
-      <h2 class="heading">AIRPORT TRANSFERS</h2>
       <div class="card">
+        <h2>AIRPORT TRANSFERS</h2>
         <form onsubmit="event.preventDefault(); alert('Thanks! We\'ll get back to you with a quote.');">
           <div>
             <label for="pickup">Pick-up Location (Full Address)</label>
@@ -164,9 +163,21 @@
     </div>
   </section>
 
+  <!-- Brand badges row -->
+  <section class="brands">
+    <div class="container">
+      <div class="brand-track" id="brandTrack">
+        <img class="brand-item" src="assets-home/brand-bmw.png" alt="BMW">
+        <img class="brand-item" src="assets-home/brand-mercedes.png" alt="MERCEDES">
+        <img class="brand-item" src="assets-home/brand-tesla.png" alt="TESLA">
+        <img class="brand-item" src="assets-home/brand-kia.png" alt="KIA">
+      </div>
+    </div>
+  </section>
+
   <!-- Why Choose -->
   <section id="why" class="why section-tight">
-    <div class="container">
+    <div class="container why-frame">
       <div class="grid">
         <div class="point"><img src="assets-home/support.png" alt=""><h4>24/7 SUPPORT</h4><p>We’re here around the clock to keep you moving.</p></div>
         <div class="point"><img src="assets-home/pricing.png" alt=""><h4>TRANSPARENT PRICING</h4><p>Clear daily rates with no hidden extras.</p></div>
@@ -203,23 +214,45 @@
     </div>
   </section>
 
-  <section class="cta-band">
-    <div class="container">
-      <h3>Ready to hit the road?</h3>
-      <a href="#services" class="btn">Book Your Ride</a>
-    </div>
-  </section>
-
-  <footer>
-    <p style="text-align:center;padding:18px;color:white;background:var(--deep)">&copy; 2025 K.A Rentals. All Rights Reserved.</p>
-  </footer>
+  <footer>&copy; 2025 K.A Rentals. All Rights Reserved.</footer>
 
   <script>
+    // Simple keyboard scroll for cars
     const track = document.getElementById('fleetTrack');
     window.addEventListener('keydown', (e)=>{
       if(e.key==='ArrowRight'){ track.scrollBy({left:380, behavior:'smooth'}); }
       if(e.key==='ArrowLeft'){ track.scrollBy({left:-380, behavior:'smooth'}); }
     });
+    // Auto-scroll brands slowly (optional)
+    const brandTrack = document.getElementById('brandTrack');
+    let offset = 0;
+    setInterval(()=>{
+      brandTrack.scrollBy({left:280, behavior:'smooth'});
+    }, 3000);
   </script>
+<script>
+  // --- PCO slider live update ---
+  const monthsInput = document.getElementById('pcoMonths');
+  const monthsVal = document.getElementById('pcoMonthsVal');
+  const monthsPlural = document.getElementById('pcoPlural');
+  if(monthsInput && monthsVal){
+    const syncMonths = ()=>{
+      const v = parseInt(monthsInput.value||'1',10);
+      monthsVal.textContent = v;
+      monthsPlural.style.display = (v===1) ? 'none' : 'inline';
+    };
+    monthsInput.addEventListener('input', syncMonths);
+    syncMonths();
+  }
+
+  // --- Book Now confirmation in PCO ---
+  const pcoBtn = document.querySelector('#pco .book-btn');
+  if(pcoBtn && monthsInput){
+    pcoBtn.addEventListener('click', ()=>{
+      const v = parseInt(monthsInput.value||'1',10);
+      alert(`You selected a ${v}-month contract for your PCO rental.`);
+    });
+  }
+</script>
 </body>
 </html>
