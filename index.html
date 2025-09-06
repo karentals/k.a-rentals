@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <!-- Header -->
   <header class="header">
     <div class="container navbar">
       <div class="leftbrand">
@@ -20,14 +19,11 @@
         <a href="#membership">PCO</a>
         <a href="#airport">AIRPORT TRANSFERS</a>
       </nav>
-      <div class="actions">
-        <button class="book-btn">BOOK NOW</button>
-      </div>
+      <div class="actions"><button class="book-btn">BOOK NOW</button></div>
     </div>
     <div class="header banner">BOOK WITH US NOW</div>
   </header>
 
-  <!-- Hero -->
   <section class="hero">
     <div class="container grid">
       <div class="reveal">
@@ -38,103 +34,71 @@
     </div>
   </section>
 
-  <!-- Services (overlap) -->
   <section id="services" class="services">
     <div class="container reveal">
       <div class="grid">
-        <article class="card">
-          <div class="imgbox"><img src="assets-home/service-selfdrive.png" alt="Self Drive"/></div>
-          <h3>SELF-DRIVE HIRE</h3>
-          <p>Drive premium cars on your terms with flexible hire options.</p>
-          <a class="cta" href="#fleet">Book Now</a>
+        <article class="card"><div class="imgbox"><img src="assets-home/service-selfdrive.png" alt="Self Drive"/></div><h3>SELF-DRIVE HIRE</h3><p>Drive premium cars on your terms with flexible hire options.</p><a class="cta" href="#fleet">Book Now</a></article>
+        <article class="card"><div class="imgbox"><img src="assets-home/service-pco.png" alt="PCO Rentals"/></div><h3>PCO RENTALS</h3><p>Fully licensed vehicles ready for ride-hailing professionals.</p><a class="cta" href="#pco">Book Now</a></article>
+        <article class="card"><div class="imgbox"><img src="assets-home/service-airport.png" alt="Airport Transfers"/></div><h3>AIRPORT TRANSFERS</h3><p>Luxury, punctual transfers to and from major airports.</p><a class="cta" href="#airport">Book Now</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="membership" class="section-tight membership">
+    <div class="container reveal">
+      <h2 class="heading">MEMBERSHIP</h2>
+      <p class="tagline">UNLOCK EXCLUSIVE BENEFITS TAILORED FOR EVERY JOURNEY</p>
+      <div class="tiers">
+        <article class="tier volt">
+          <img class="tier-icon" src="assets-home/membership-volt.png" alt="Volt Access"/>
+          <div><h3>VOLT ACCESS</h3><p>FOR NEW MEMBERS. ENTRY-LEVEL SERVICE PACKAGE.</p></div>
+          <img class="wmk" src="assets-home/badge.png" alt="Badge watermark"/>
         </article>
-        <article class="card">
-          <div class="imgbox"><img src="assets-home/service-pco.png" alt="PCO Rentals"/></div>
-          <h3>PCO RENTALS</h3>
-          <p>Fully licensed vehicles ready for ride-hailing professionals.</p>
-          <a class="cta" href="#pco">Book Now</a>
+        <article class="tier apex">
+          <img class="tier-icon" src="assets-home/membership-apex.png" alt="Apex Membership"/>
+          <div><h3>APEX MEMBERSHIP</h3><p>DISCOUNTED RENTALS FOR REGULAR DRIVERS (28+ DAYS).</p><div class="badge">4-WEEK PACKAGE · SET MILEAGE · DISCOUNTED RATE</div></div>
+          <img class="wmk" src="assets-home/badge.png" alt="Badge watermark"/>
         </article>
-        <article class="card">
-          <div class="imgbox"><img src="assets-home/service-airport.png" alt="Airport Transfers"/></div>
-          <h3>AIRPORT TRANSFERS</h3>
-          <p>Luxury, punctual transfers to and from major airports.</p>
-          <a class="cta" href="#airport">Book Now</a>
+        <article class="tier platinum">
+          <img class="tier-icon" src="assets-home/membership-platinum.png" alt="Platinum Experience"/>
+          <div><h3>PLATINUM EXPERIENCE</h3><p>OUR MOST EXCLUSIVE TIER — VIP SUPPORT & LUXURY UPGRADES.</p><div class="badge">EXCLUSIVE: Available only to Apex Members</div></div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Membership -->
-  <section id="membership" class="section-tight">
-    <div class="container reveal">
-      <h2 class="heading">MEMBERSHIP</h2>
-      <p class="tagline">UNLOCK EXCLUSIVE BENEFITS TAILORED FOR EVERY JOURNEY</p>
-      <div class="tiers">
-  <article class="tier volt">
-    <img class="tier-icon" src="assets-home/membership-volt.png" alt="Volt Access"/>
-    <div>
-      <h3>VOLT ACCESS</h3>
-      <p>FOR NEW MEMBERS. ENTRY-LEVEL SERVICE PACKAGE.</p>
-    </div>
-    <img class="wmk" src="assets-home/badge.png" alt="Badge watermark"/>
-  </article>
-
-  <article class="tier apex">
-    <img class="tier-icon" src="assets-home/membership-apex.png" alt="Apex Membership"/>
-    <div>
-      <h3>APEX MEMBERSHIP</h3>
-      <p>DISCOUNTED RENTALS FOR REGULAR DRIVERS (28+ DAYS).</p>
-      <div class="badge">4-WEEK PACKAGE · SET MILEAGE · DISCOUNTED RATE</div>
-    </div>
-    <img class="wmk" src="assets-home/badge.png" alt="Badge watermark"/>
-  </article>
-
-  <article class="tier platinum">
-    <img class="tier-icon" src="assets-home/membership-platinum.png" alt="Platinum Experience"/>
-    <div>
-      <h3>PLATINUM EXPERIENCE</h3>
-      <p>OUR MOST EXCLUSIVE TIER — VIP SUPPORT & LUXURY UPGRADES.</p>
-    </div>
-  </article>
-</div>
-</div></section>
-
-  <!-- Luxury Rentals -->
   <section id="fleet" class="section-tight">
     <div class="container" style="text-align:center">
       <h2 class="heading-xl reveal">LUXURY RENTALS</h2>
       <p class="sub reveal">Explore our premium self-drive fleet — all hires include comprehensive insurance.</p>
       <div class="carousel reveal">
         <div class="track" id="fleetTrack">
-          <article class="car">
-            <div class="car-img"><img src="assets-home/bmw2.png" alt="BMW 2 Series"/></div>
-            <div class="meta"><div><strong>BMW 2 SERIES GRAN COUPÉ</strong></div><div class="rate">£XX/DAY</div></div>
-          </article>
-          <article class="car">
-            <div class="car-img"><img src="assets-home/bmwx3.png" alt="BMW X3"/></div>
-            <div class="meta"><div><strong>BMW X3</strong></div><div class="rate">£XX/DAY</div></div>
-          </article>
-          <article class="car">
-            <div class="car-img"><img src="assets-home/cla.png" alt="Mercedes CLA"/></div>
-            <div class="meta"><div><strong>MERCEDES-BENZ CLA</strong></div><div class="rate">£XX/DAY</div></div>
-          </article>
-          <article class="car">
-            <div class="car-img"><img src="assets-home/tesla.png" alt="Tesla Model 3"/></div>
-            <div class="meta"><div><strong>TESLA MODEL 3</strong></div><div class="rate">£XX/DAY</div></div>
-          </article>
+          <article class="car"><div class="car-img"><img src="assets-home/bmw2.png" alt="BMW 2 Series"/></div><div class="meta"><div><strong>BMW 2 SERIES GRAN COUPÉ</strong></div><div class="rate">£XX/DAY</div></div></article>
+          <article class="car"><div class="car-img"><img src="assets-home/bmwx3.png" alt="BMW X3"/></div><div class="meta"><div><strong>BMW X3</strong></div><div class="rate">£XX/DAY</div></div></article>
+          <article class="car"><div class="car-img"><img src="assets-home/cla.png" alt="Mercedes CLA"/></div><div class="meta"><div><strong>MERCEDES-BENZ CLA</strong></div><div class="rate">£XX/DAY</div></div></article>
+          <article class="car"><div class="car-img"><img src="assets-home/tesla.png" alt="Tesla Model 3"/></div><div class="meta"><div><strong>TESLA MODEL 3</strong></div><div class="rate">£XX/DAY</div></div></article>
         </div>
+      </div>
+    </div>
+  
+  <section class="luxury-info">
+    <div class="wrapper">
+      <h3 class="heading">WHY OUR FLEET SETS THE STANDARD</h3>
+      <div class="copy">
+        <p>At <strong>K.A Rentals</strong>, we believe driving a luxury vehicle should be an experience, not just a service. Our fleet is <strong>fully protected</strong>, with every vehicle maintained to the highest standards and covered by <strong>comprehensive insurance</strong> for complete peace of mind.</p>
+        <p>We carefully select our vehicles to combine <strong>performance, comfort, and style</strong>, ensuring every hire delivers a premium driving experience. By focusing on quality and attention to detail, we give our customers the confidence to enjoy every journey while upholding the highest levels of <strong>excellence and professionalism</strong>.</p>
       </div>
     </div>
   </section>
 
-  <!-- PCO Rentals -->
+
   <section id="pco" class="pco">
     <div class="container">
+      <h2 class="pco-title">PCO RENTALS</h2>
       <div class="card reveal">
-        <h2>PCO RENTALS</h2>
         <div class="slider-wrap">
-          <div class="length">CONTRACT LENGTH: <span id="monthsVal">1</span> MONTH<span id="plural" style="display:none">S</span></div>
-          <input id="months" class="slider" type="range" min="1" max="12" step="1" value="1">
+          <div class="length">CONTRACT LENGTH: <span id="monthsVal">6</span> MONTH<span id="plural" style="display:none">S</span></div>
+          <input id="months" class="slider" type="range" min="6" max="12" step="1" value="6">
         </div>
         <div class="reqs">
           <div class="req">🪪 PCO LICENSE REQUIRED</div>
@@ -146,40 +110,26 @@
     </div>
   </section>
 
-  <!-- Airport Transfers -->
   <section id="airport" class="air">
     <div class="container">
       <div class="card reveal">
-        <h2>AIRPORT TRANSFERS</h2>
+        </div><h2 class="air-title">AIRPORT TRANSFER</h2><div class="card reveal">
         <label class="label">📍 Pick-up Location</label>
         <input id="a_pick" class="input" type="text" placeholder="e.g., 10 Downing St, London SW1A 2AA">
         <label class="label">🎯 Drop-off Location</label>
         <input id="a_drop" class="input" type="text" placeholder="e.g., Heathrow Terminal 5, TW6 2GA">
         <div class="row">
-          <div>
-            <label class="label">👥 Passengers</label>
-            <select id="a_pax" class="select"><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select>
-          </div>
-          <div>
-            <label class="label">📅 Date</label>
-            <input id="a_date" class="input" type="date">
-          </div>
+          <div><label class="label">👥 Passengers</label><select id="a_pax" class="select"><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select></div>
+          <div><label class="label">📅 Date</label><input id="a_date" class="input" type="date"></div>
         </div>
         <div class="row">
-          <div>
-            <label class="label">⏰ Time</label>
-            <input id="a_time" class="input" type="time">
-          </div>
-          <div class="controls">
-            <label class="ret"><input id="a_ret" type="checkbox"> Add Return Journey</label>
-            <button id="a_search" class="search-btn" type="button">SEARCH</button>
-          </div>
+          <div><label class="label">⏰ Time</label><input id="a_time" class="input" type="time"></div>
+          <div class="controls"><label class="ret"><input id="a_ret" type="checkbox"> Add Return Journey</label><button id="a_search" class="search-btn" type="button">SEARCH</button></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Brands row -->
   <section class="brands">
     <div class="container">
       <div class="brand-track" id="brandTrack">
@@ -191,7 +141,6 @@
     </div>
   </section>
 
-  <!-- Why Book With Us -->
   <section class="why">
     <div class="container why-frame reveal">
       <div class="why-grid">
@@ -204,68 +153,30 @@
     </div>
   </section>
 
-  <!-- Info Footer -->
   <section class="info">
     <div class="container grid">
-      <div>
-        <h4>Frequently Asked Questions</h4>
+      <div><h4>Frequently Asked Questions</h4>
         <ul>
           <li><strong>Is insurance included?</strong> Yes, comprehensive insurance per driver is included.</li>
           <li><strong>What documents do I need?</strong> Full UK licence (2+ years), photo ID, proof of address (90 days), DVLA check code.</li>
           <li><strong>Can I extend my hire?</strong> Yes — contact us 24 hours before your return time.</li>
         </ul>
       </div>
-      <div>
-        <h4>Contact</h4>
-        <p>Phone: 020 1234 5678</p>
-        <p>Email: info@karentals.co.uk</p>
-        <p>Location: London, UK</p>
-      </div>
-      <div>
-        <h4>Hours</h4>
-        <p>Mon–Fri: 8am–7pm</p>
-        <p>Sat: 9am–5pm</p>
-        <p>Sun: By appointment</p>
-      </div>
+      <div><h4>Contact</h4><p>Phone: 020 1234 5678</p><p>Email: info@karentals.co.uk</p><p>Location: London, UK</p></div>
+      <div><h4>Hours</h4><p>Mon–Fri: 8am–7pm</p><p>Sat: 9am–5pm</p><p>Sun: By appointment</p></div>
     </div>
   </section>
 
   <footer>&copy; 2025 K.A Rentals. All Rights Reserved.</footer>
 
   <script>
-    // Reveal animations
     const io = new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show')}}),{threshold:.14});
     document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-    // Fleet carousel keyboard helper
     const ft = document.getElementById('fleetTrack');
-    window.addEventListener('keydown',e=>{
-      if(e.key==='ArrowRight') ft.scrollBy({left:380,behavior:'smooth'});
-      if(e.key==='ArrowLeft') ft.scrollBy({left:-380,behavior:'smooth'});
-    });
-
-    // PCO slider
-    const m = document.getElementById('months');
-    const mVal = document.getElementById('monthsVal');
-    const mPl = document.getElementById('plural');
-    function sync(){ const v = parseInt(m.value||'1',10); mVal.textContent=v; mPl.style.display = v===1 ? 'none' : 'inline'; }
-    m.addEventListener('input', sync); sync();
-    document.getElementById('pcoBook').addEventListener('click', ()=>{
-      const v = parseInt(m.value||'1',10);
-      alert(`You selected a ${v}-month contract for your PCO rental.`);
-    });
-
-    // Airport defaults + search
-    const now = new Date();
-    const ad = document.getElementById('a_date');
-    const at = document.getElementById('a_time');
-    ad.value = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
-    at.value = `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
-    document.getElementById('a_search').addEventListener('click', ()=>{
-      alert(`Airport transfer request:\nPickup: ${document.getElementById('a_pick').value||'(not set)'}\nDrop-off: ${document.getElementById('a_drop').value||'(not set)'}\nPassengers: ${document.getElementById('a_pax').value}\nDate: ${ad.value} at ${at.value}\nReturn: ${document.getElementById('a_ret').checked ? 'Yes' : 'No'}`);
-    });
-
-    // Brands strip gentle auto-scroll
+    window.addEventListener('keydown',e=>{ if(e.key==='ArrowRight') ft.scrollBy({left:380,behavior:'smooth'}); if(e.key==='ArrowLeft') ft.scrollBy({left:-380,behavior:'smooth'}); });
+    const m=document.getElementById('months'), mv=document.getElementById('monthsVal'), pl=document.getElementById('plural'); function sync(){const v=parseInt(m.value||'6',10); mv.textContent=v; pl.style.display=v===1?'none':'inline';} m.addEventListener('input',sync); sync();
+    document.getElementById('pcoBook').addEventListener('click',()=>{const v=parseInt(m.value||'6',10); alert(`You selected a ${v}-month contract for your PCO rental.`);});
+    const now=new Date(); document.getElementById('a_date').value=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`; document.getElementById('a_time').value=`${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
     setInterval(()=>{ document.getElementById('brandTrack').scrollBy({left:280,behavior:'smooth'}); }, 3000);
   </script>
 </body>
