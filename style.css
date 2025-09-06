@@ -145,3 +145,96 @@ footer{text-align:center;padding:18px;color:#fff;background:var(--deep)}
 .air .input,.air .select{border:2px solid #cfe9e0}
 .air .input:focus,.air .select:focus{border-color:#6febaf; box-shadow:0 0 0 4px rgba(111,235,175,.18)}
 .air .search-btn{background:linear-gradient(135deg,#6febaf,#1d7da3); color:#00253b}
+
+/* ===== V8 Updates ===== */
+
+/* 1) Thicker borders */
+.car{border-width:6px !important}
+.pco .card{
+  border:6px solid transparent !important;
+  background-image:linear-gradient(#ffffff,#ffffff),linear-gradient(135deg,#0b3e7b,#1d7da3,#6febaf);
+  background-origin:border-box;background-clip:padding-box,border-box;
+}
+.air .card{border-width:8px !important}
+
+/* 2) Membership heading bigger */
+.heading{font-size:32px !important; letter-spacing:1px}
+
+/* Platinum with thick navy border */
+.tier.platinum{border:6px solid #0b3e7b !important}
+
+/* 3) PCO title larger */
+.pco-title{font-size:32px}
+
+/* 4) PCO info block styling */
+.pco-info{
+  margin-top:14px;
+  background:rgba(111,235,175,.08);
+  border:1px solid #9ee4ff;
+  border-radius:14px;
+  padding:12px 14px 12px 48px;
+  color:#0b3e7b;
+  position:relative;
+  text-align:left;
+}
+.pco-info .shield{
+  position:absolute; left:12px; top:12px; width:24px; height:24px;
+}
+
+/* 5) Gradient transition backgrounds + subtle parallax */
+.pco{
+  background:linear-gradient(180deg,#0b3e7b 0%, #0b3e7b 40%, #6febaf 100%) !important;
+  background-attachment:fixed;
+}
+.air{
+  background:linear-gradient(180deg,#6febaf 0%, #ffffff 60%) !important;
+  background-attachment:fixed;
+}
+
+/* Mobile fallback for background-attachment */
+@media (max-width: 900px){
+  .pco, .air{background-attachment:scroll}
+}
+
+/* Premium Airport Transfer refinements */
+.air-title{
+  color:#ffffff; text-transform:uppercase; letter-spacing:1px; font-weight:900;
+  text-align:center; margin: -8px 0 16px 0;
+}
+.air .card{
+  max-width:980px; margin:0 auto;
+  background:#ffffff;
+  border:8px solid transparent;
+  border-radius:20px;
+  padding:20px 22px;
+  background-image:linear-gradient(#ffffff,#ffffff),linear-gradient(135deg,#6febaf,#1d7da3,#0b3e7b);
+  background-origin:border-box; background-clip:padding-box,border-box;
+  box-shadow:0 22px 56px rgba(5,45,90,.20);
+  position:relative;
+}
+.air .step{margin-bottom:8px}
+.air .step-title{
+  font-weight:900; color:#0b3e7b; letter-spacing:.6px; margin:6px 0 8px 0;
+}
+.air .divider{
+  height:1px; background:linear-gradient(90deg,#e8f5ff, #cfe9f7, #e8f5ff);
+  border-radius:1px; margin:10px 0 12px 0;
+}
+.air .label{display:block; font-weight:900; color:#0b3e7b; text-transform:uppercase; letter-spacing:.7px; margin:8px 0 6px 0; position:relative}
+.air .label .icon{position:absolute; left:12px; top:44px; opacity:.7; pointer-events:none}
+.input.with-pad, .select.with-pad{padding-left:40px}
+.summary{display:grid; grid-template-columns:1fr 1fr; gap:8px; background:#f7fcff; border:1px solid #e0f2ff; border-radius:12px; padding:12px; color:#04324f}
+@media(max-width:800px){ .summary{grid-template-columns:1fr} }
+.search-btn{background:linear-gradient(135deg,#6febaf,#1d7da3); color:#ffffff; font-weight:900; letter-spacing:.6px; text-transform:uppercase}
+
+/* Larger K.A RENTALS logo in header */
+header .logo-text{
+  font-size: 1.8rem !important; /* increase size */
+  font-weight: 900 !important;
+  letter-spacing: 1.2px;
+}
+@media(max-width:768px){
+  header .logo-text{
+    font-size:1.4rem !important;
+  }
+}
