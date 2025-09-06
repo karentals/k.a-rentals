@@ -19,9 +19,9 @@ body{font-family:Inter,system-ui,Arial,sans-serif;background:#fff;color:#0e1b2a;
 .navcenter{justify-self:center;display:flex;align-items:center;gap:14px}
 .navlink{color:#fff;font-weight:900;text-transform:uppercase;letter-spacing:.6px;text-decoration:none;padding:6px 2px;transition:color .2s ease}
 .navlink:hover{color:var(--mint)}
-.nav-sep{width:1px;height:18px;background:rgba(255,255,255,.35);display:inline-block}
+.nav-sep{width:2px;height:22px;background:var(--mint);display:inline-block;border-radius:2px}
 .actions{justify-self:end}
-.book-btn{background:linear-gradient(135deg,var(--mint),var(--teal));color:#02263b;border:none;padding:12px 22px;border-radius:14px;font-weight:1000;cursor:pointer;box-shadow:0 10px 26px rgba(0,0,0,.16)}
+.book-btn{background:linear-gradient(135deg,var(--mint),var(--teal));color:#02263b;border:none;padding:14px 26px;border-radius:14px;font-weight:1000;cursor:pointer;box-shadow:0 12px 28px rgba(0,0,0,.18)}
 /* Fixed Book Now */
 .book-btn.sticky{position:fixed;top:14px;right:4%;z-index:200;opacity:.0;transform:translateY(-6px);transition:opacity .35s ease, transform .35s ease}
 .book-btn.sticky.show{opacity:1;transform:none}
