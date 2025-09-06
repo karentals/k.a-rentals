@@ -71,7 +71,7 @@ input[type=range].slider::-moz-range-thumb{width:26px;height:26px;border-radius:
 @media(max-width:900px){.reqs{grid-template-columns:1fr}}.pco .book-btn{min-width:260px;font-size:18px;padding:14px 28px;border-radius:14px}
 /* Airport Transfers */
 .air{background:var(--deep);padding:56px 0;color:#eaf3ff}
-.air .card{max-width:900px;margin:0 auto;border:4px solid var(--turq);border-radius:18px;padding:20px;background:#0b3e7b;position:relative}
+.air .card{max-width:980px;margin:0 auto;background:#ffffff;border:8px solid #08294f;border-radius:20px;padding:20px 22px;box-shadow:0 22px 56px rgba(5,45,90,.20);position:relative}
 .air h2{margin:0 0 10px;color:#ffffff;text-transform:uppercase;letter-spacing:1.2px;font-weight:900}
 .air .card::before{content:"";position:absolute;inset:0;background:url('data:image/png;base64,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') no-repeat center 40%/60%;opacity:.32;pointer-events:none;filter:drop-shadow(0 8px 24px rgba(0,0,0,.25))}
 .air .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
@@ -127,17 +127,7 @@ footer{text-align:center;padding:18px;color:#fff;background:var(--deep)}
   background:linear-gradient(90deg,#6febaf,#1d7da3);
   border-radius:3px;
 }
-.air .card{
-  max-width:900px; margin:0 auto;
-  background:#ffffff;
-  border:6px solid transparent;
-  border-radius:20px;
-  padding:20px;
-  background-image:linear-gradient(#ffffff,#ffffff),linear-gradient(135deg,#6febaf,#1d7da3,#0b3e7b);
-  background-origin:border-box; background-clip:padding-box,border-box;
-  box-shadow:0 20px 48px rgba(5,45,90,.20);
-  position:relative;
-}
+.air .card{max-width:980px;margin:0 auto;background:#ffffff;border:8px solid #08294f;border-radius:20px;padding:20px 22px;box-shadow:0 22px 56px rgba(5,45,90,.20);position:relative}
 /* Remove previous logo watermark inside the card for a clean white interior */
 .air .card::before{display:none !important}
 /* Keep labels/touches refined on white */
@@ -155,7 +145,7 @@ footer{text-align:center;padding:18px;color:#fff;background:var(--deep)}
   background-image:linear-gradient(#ffffff,#ffffff),linear-gradient(135deg,#0b3e7b,#1d7da3,#6febaf);
   background-origin:border-box;background-clip:padding-box,border-box;
 }
-.air .card{border-width:8px !important}
+.air .card{max-width:980px;margin:0 auto;background:#ffffff;border:8px solid #08294f;border-radius:20px;padding:20px 22px;box-shadow:0 22px 56px rgba(5,45,90,.20);position:relative}
 
 /* 2) Membership heading bigger */
 .heading{font-size:32px !important; letter-spacing:1px}
@@ -201,17 +191,7 @@ footer{text-align:center;padding:18px;color:#fff;background:var(--deep)}
   color:#ffffff; text-transform:uppercase; letter-spacing:1px; font-weight:900;
   text-align:center; margin: -8px 0 16px 0;
 }
-.air .card{
-  max-width:980px; margin:0 auto;
-  background:#ffffff;
-  border:8px solid transparent;
-  border-radius:20px;
-  padding:20px 22px;
-  background-image:linear-gradient(#ffffff,#ffffff),linear-gradient(135deg,#6febaf,#1d7da3,#0b3e7b);
-  background-origin:border-box; background-clip:padding-box,border-box;
-  box-shadow:0 22px 56px rgba(5,45,90,.20);
-  position:relative;
-}
+.air .card{max-width:980px;margin:0 auto;background:#ffffff;border:8px solid #08294f;border-radius:20px;padding:20px 22px;box-shadow:0 22px 56px rgba(5,45,90,.20);position:relative}
 .air .step{margin-bottom:8px}
 .air .step-title{
   font-weight:900; color:#0b3e7b; letter-spacing:.6px; margin:6px 0 8px 0;
@@ -286,4 +266,31 @@ header .logo-text{
 }
 @media(max-width:768px){
   header .logo-text{font-size:1.6rem !important;}
+}
+
+/* Airport Transfer: navy field borders */
+.air .input,.air .select{border:2px solid #0b3e7b !important}
+.air .input:focus,.air .select:focus{border-color:#08294f !important; box-shadow:0 0 0 4px rgba(8,41,79,.12)}
+
+/* Summary box navy border */
+.air .summary{border:2px solid #0b3e7b}
+
+/* Larger section titles */
+.heading-xl, .heading, .pco-title, .air-title{
+  font-size: 2.4rem !important;
+  letter-spacing: 1.6px !important;
+  font-weight: 900 !important;
+}
+@media(max-width: 800px){
+  .heading-xl, .heading, .pco-title, .air-title{font-size: 1.8rem !important; letter-spacing: 1px !important;}
+}
+
+/* Larger brand in header */
+header .logo-text{
+  font-size: 2.8rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 1.8px !important;
+}
+@media(max-width:768px){
+  header .logo-text{font-size:1.8rem !important;}
 }
