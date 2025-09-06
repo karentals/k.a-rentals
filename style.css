@@ -247,3 +247,43 @@ header .logo-text{
 .car-img{width:100%;border-radius:14px}
 .car-name{font-weight:800;color:#0b3e7b;margin-top:8px}
 .car-rate{color:#6febaf;font-weight:700}
+
+
+/* Larger top-left brand text */
+header .logo-text {
+  font-size: 2.2rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 1.4px;
+}
+@media(max-width:768px){
+  header .logo-text{
+    font-size:1.6rem !important;
+  }
+}
+
+
+/* Membership pyramid layout */
+.membership-grid{display:flex;flex-direction:column;align-items:center;gap:30px;margin-top:20px}
+.membership-grid .top-row{display:flex;gap:30px;justify-content:center;width:100%}
+.membership-grid .bottom-row{display:flex;justify-content:center;width:100%}
+.tier{flex:1;max-width:320px;padding:20px;border-radius:16px;text-align:center}
+.tier h4{font-size:1.2rem;color:#0b3e7b;font-weight:900;margin-bottom:10px}
+.tier.volt{border:4px solid; border-image:linear-gradient(90deg,#6febaf,#0b3e7b) 1}
+.tier.apex{border:4px solid #0b3e7b; box-shadow:0 4px 8px rgba(0,0,0,.1)}
+.tier.platinum{border:6px solid #0b3e7b; box-shadow:0 0 10px rgba(111,235,175,.6)}
+
+/* Hero overlay thicker */
+.hero-overlay{border:8px solid; border-image:linear-gradient(90deg,#6febaf,#0b3e7b) 1; border-radius:20px}
+
+/* Services section boxes with thick navy borders */
+.services .service-box{border:6px solid #0b3e7b;border-radius:18px;padding:16px;}
+
+/* Header brand text stays bold and large */
+header .logo-text{
+  font-size:2.4rem !important;
+  font-weight:900 !important;
+  letter-spacing:1.6px;
+}
+@media(max-width:768px){
+  header .logo-text{font-size:1.6rem !important;}
+}
