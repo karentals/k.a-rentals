@@ -234,3 +234,10 @@ header .brand-text, header .brand a{ text-decoration:none; }
 .hero{ position:relative; overflow:hidden; }
 .hero-logo{ position:absolute; right:4%; top:50%; transform:translateY(-50%); width:min(60%, 700px); max-width:80vw; opacity:0.85; mix-blend-mode:multiply; filter:saturate(90%); }
 @media(min-width:1400px){ .hero-logo{ width:min(55%, 720px); } }
+
+/* === Fleet before Membership adjustments === */
+#fleet{ padding-top: 24px; }
+
+/* === Hero Logo Resize Adjustment === */
+.hero-logo{ max-width:60vw !important; width:min(50%, 500px) !important; }
+@media(min-width:1400px){ .hero-logo{ width:min(45%, 540px) !important; } }
