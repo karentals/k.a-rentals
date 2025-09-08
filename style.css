@@ -241,3 +241,39 @@ header .brand-text, header .brand a{ text-decoration:none; }
 /* === Hero Logo Resize Adjustment === */
 .hero-logo{ max-width:60vw !important; width:min(50%, 500px) !important; }
 @media(min-width:1400px){ .hero-logo{ width:min(45%, 540px) !important; } }
+
+/* === Header Redo: badge, brand, white nav, blended CTA === */
+header{ background:#062f61; box-shadow:0 4px 10px rgba(0,0,0,0.15); }
+.header-inner{ display:flex; align-items:center; justify-content:space-between; gap:20px; padding:12px 16px; }
+.brand-wrap{ display:flex; align-items:center; gap:10px; }
+.badge-dot{ width:22px; height:22px; border-radius:50%; background:var(--mint); display:inline-block; }
+.brand-text{ color:var(--mint); font-weight:900; font-size:1.2rem; letter-spacing:.8px; white-space:nowrap; }
+header nav ul{ list-style:none; display:flex; gap:18px; margin:0; padding:0; }
+header nav ul li.nav-item a{ color:#fff; font-weight:800; text-decoration:none; padding:8px 10px; border-radius:8px; }
+header nav ul li.nav-item a:hover{ background:rgba(255,255,255,0.08); }
+.cta-book{ background: linear-gradient(135deg, var(--mint), rgba(255,255,255,0.85)); color:#062f61; font-weight:900; padding:10px 18px; border-radius:12px; text-decoration:none; box-shadow:0 6px 16px rgba(6,47,97,0.25); }
+.cta-book:hover{ filter:brightness(0.95); }
+@media(max-width:900px){ header nav ul{ gap:10px; } .brand-text{ font-size:1rem; } .cta-book{ padding:8px 14px; } }
+
+/* === Final Header Styling (Matches Mock-up) === */
+header{ background:#062f61; box-shadow:0 4px 12px rgba(0,0,0,0.25); }
+.header-inner{ display:flex; align-items:center; justify-content:space-between; padding:16px 24px; gap:30px; }
+.brand-wrap{ display:flex; align-items:center; gap:12px; }
+.badge-dot{ width:28px; height:28px; border-radius:50%; background:var(--mint); display:inline-block; }
+.brand-text{ color:var(--mint); font-size:1.6rem; font-weight:900; letter-spacing:1px; white-space:nowrap; }
+header nav ul{ list-style:none; display:flex; gap:30px; margin:0 auto; padding:0; }
+header nav ul li.nav-item a{ color:#fff; font-weight:800; font-size:1rem; text-decoration:none; transition:color 0.3s ease; }
+header nav ul li.nav-item a:hover{ color:var(--mint); }
+.cta-book{ background: linear-gradient(135deg, var(--mint), rgba(255,255,255,0.85)); color:#062f61; font-weight:900; padding:12px 24px; border-radius:12px; text-decoration:none; box-shadow:0 4px 12px rgba(6,47,97,0.25); }
+.cta-book:hover{ filter:brightness(0.95); }
+@media(max-width:900px){ header nav ul{ gap:15px; } .brand-text{ font-size:1.3rem; } .cta-book{ padding:10px 18px; } }
+
+/* === Seamless Header + Hero Background === */
+:root{ --hero-navy:#062f61; }
+header{ background:var(--hero-navy); }
+.hero{ background:var(--hero-navy); margin-top:0; padding-top:40px; }
+.hero .hero-overlay{ background:none !important; }
+.hero h1, .hero h2, .hero p{ color:#ffffff; }
+
+/* === Swap Cars Before Membership === */
+#fleet{ margin-bottom:40px; }
