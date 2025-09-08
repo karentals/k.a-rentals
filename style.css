@@ -156,3 +156,27 @@ header .banner{ display:none !important; }
 .side-accent::before{ content:""; position:absolute; left:0; top:0; bottom:0; width:10px; background: linear-gradient(to bottom, var(--mint), transparent); opacity:0.35; border-radius:8px; }
 @media (min-width: 1024px){ .side-accent::before{ width:14px; } }
 .side-accent{ padding-left: clamp(16px, 2vw, 28px); }
+
+/* === PCO & Membership updates === */
+#pco .section-title-lg, #membership .section-title-lg{ font-size: clamp(1.8rem, 3.2vw, 2.4rem); letter-spacing: 1.2px; }
+.membership-note{ margin: 8px 0 16px; font-size:1rem; color:#35506c; }
+.tier-icon{ display:inline-flex; vertical-align:middle; margin-right:8px; color: var(--deep); }
+.tier-platinum{ background: var(--mint); border: 3px solid var(--deep); border-radius: 14px; padding: 16px; }
+.tier-platinum .tier-icon{ color:#00253b; }
+.tier-apex{ background: linear-gradient(135deg, var(--mint) 0%, rgba(6,47,97,0.12) 100%); border: 2px solid rgba(6,47,97,0.25); border-radius: 14px; padding: 16px; }
+.tier-apex .tier-icon{ color:#062f61; }
+.tier-volt{ border: 3px solid var(--deep); border-radius: 14px; padding: 16px; background:#fff; }
+.tier-volt .tier-icon{ color:#062f61; }
+
+/* === Round of updates per request === */
+.service-icons-strip{ display:flex; gap:20px; align-items:center; justify-content:center; padding:14px 0 0; flex-wrap:wrap; }
+.service-icon{ display:flex; align-items:center; gap:8px; padding:8px 12px; border-radius:12px; background:rgba(6,47,97,.05); }
+.service-icon span{ font-weight:700; color:#062f61; }
+#header-keywords{ display:flex; gap:12px; align-items:center; justify-content:center; padding:8px 0 0; }
+#header-keywords .keyword{ font-weight:800; letter-spacing:.6px; }
+.services .card p{ font-weight:600; color:#1c2d44; }
+#airport .card, #airport .box, #airport .field, #airport .outline{ border-width:4px !important; }
+#airport{ position:relative; overflow:hidden; }
+#airport::before{ content:""; position:absolute; left:0; right:0; top:-120px; height:320px; background: linear-gradient(180deg, rgba(6,47,97,0.12), rgba(6,47,97,0)); pointer-events:none; }
+header .brand, header .logo, header .brand-name{ display:inline-flex; align-items:center; gap:10px; }
+header .brand-name{ font-weight:900; color:#062f61; text-decoration:none; letter-spacing:.6px; }
