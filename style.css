@@ -371,3 +371,34 @@ header{ background:var(--hero-navy) !important; }
   line-height:1.6;
   margin-bottom:24px;
 }
+
+/* === FINAL HEADER + HERO === */
+header{ background:#062f61; box-shadow:0 4px 12px rgba(0,0,0,0.25); }
+.header-inner{ display:flex; align-items:center; justify-content:space-between; padding:16px 24px; }
+.brand-wrap{ display:flex; align-items:center; gap:10px; }
+.badge-dot{ width:24px; height:24px; background:var(--mint); border-radius:50%; }
+.brand-text{ color:var(--mint); font-weight:900; font-size:1.6rem; }
+header nav ul{ display:flex; gap:30px; list-style:none; margin:0; padding:0; }
+header nav ul li.nav-item a{ color:#fff; font-weight:800; text-decoration:none; }
+.cta-book{ background:linear-gradient(135deg, var(--mint), #fff); color:#062f61; font-weight:900; padding:10px 20px; border-radius:12px; text-decoration:none; }
+
+.hero{ background:#062f61 !important; padding-top:40px; }
+.hero h1, .hero h2, .hero p{ color:#fff; }
+
+/* Intro descriptive text above vehicles */
+.info-section p, .info-section, .info-text{ font-size:1.25rem; font-weight:700; color:#062f61; line-height:1.6; margin-bottom:24px; }
+
+/* Fleet vehicles styling */
+#fleet img{ border:6px solid #062f61; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.2); }
+#fleet .vehicle-card{ padding:16px; }
+
+/* Membership redesigned visually */
+.membership-section{ background:linear-gradient(180deg, rgba(36,208,179,0.15) 0%, rgba(6,47,97,0.05) 100%); padding:60px 20px; text-align:center; border:none; }
+.membership-section h2{ font-size:2.5rem; font-weight:900; color:#062f61; margin-bottom:40px; }
+.membership-section .tiers{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px; justify-items:center; }
+.membership-section .tier-card{ width:320px; min-height:400px; border-radius:16px; padding:24px; text-align:center; transition:transform 0.3s ease, box-shadow 0.3s ease; box-shadow:0 4px 10px rgba(0,0,0,0.15); }
+.membership-section .tier-card:hover{ transform:translateY(-6px); box-shadow:0 8px 20px rgba(0,0,0,0.25); }
+.membership-section .tier-icon{ width:80px; height:80px; margin-bottom:16px; }
+.tier-platinum{ background:var(--mint); color:#fff; border:3px solid #062f61; }
+.tier-apex{ background:linear-gradient(135deg, var(--mint) 0%, #062f61 100%); color:#fff; }
+.tier-volt{ background:#fff; border:3px solid #062f61; color:#062f61; }
