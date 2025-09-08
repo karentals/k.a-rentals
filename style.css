@@ -288,3 +288,86 @@ header{ background:var(--hero-navy) !important; }
 .hero .hero-overlay{ background:none !important; }
 .hero{ background-image:none !important; }
 .hero h1, .hero h2, .hero p{ color:#ffffff; }
+
+/* === Membership Visual Redesign === */
+.membership-section{
+  background:linear-gradient(180deg, rgba(36,208,179,0.15) 0%, rgba(6,47,97,0.05) 100%);
+  padding:60px 20px;
+  text-align:center;
+  border:none;
+}
+.membership-section h2{
+  font-size:2.5rem;
+  font-weight:900;
+  color:#062f61;
+  margin-bottom:40px;
+}
+.membership-section .tiers{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+  justify-items:center;
+}
+.membership-section .tier-card{
+  width:320px;
+  min-height:400px;
+  border-radius:16px;
+  padding:24px;
+  text-align:center;
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+.membership-section .tier-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+.membership-section .tier-icon{
+  width:80px;
+  height:80px;
+  margin-bottom:16px;
+  transition:transform 0.3s ease, filter 0.3s ease;
+}
+.membership-section .tier-card:hover .tier-icon{
+  transform:scale(1.1);
+  filter:drop-shadow(0 0 6px rgba(36,208,179,0.8));
+}
+.tier-platinum{
+  background:var(--mint);
+  color:#fff;
+  border:3px solid #062f61;
+}
+.tier-platinum .tier-icon{ color:#062f61; }
+.tier-apex{
+  background:linear-gradient(135deg, var(--mint) 0%, #062f61 100%);
+  color:#fff;
+  border:none;
+}
+.tier-apex .tier-icon{ color:var(--mint); }
+.tier-volt{
+  background:#fff;
+  border:3px solid #062f61;
+  color:#062f61;
+}
+.tier-volt .tier-icon{ color:var(--mint); }
+.membership-section .tier-card h3{
+  font-size:1.6rem;
+  font-weight:800;
+  margin-bottom:10px;
+}
+.membership-section .tier-card p{
+  font-size:1rem;
+  line-height:1.5;
+  padding:0 10px;
+}
+
+/* === Bold Navy Borders for Vehicle Images === */
+#fleet img { border:6px solid #062f61 !important; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.2); }
+
+/* === Info Text Above Vehicles Section === */
+.info-section p, .info-section, .info-text {
+  font-size:1.25rem;
+  font-weight:700;
+  color:#062f61;
+  line-height:1.6;
+  margin-bottom:24px;
+}
