@@ -168,15 +168,11 @@ header .banner{ display:none !important; }
 .tier-volt{ border: 3px solid var(--deep); border-radius: 14px; padding: 16px; background:#fff; }
 .tier-volt .tier-icon{ color:#062f61; }
 
-/* === Round of updates per request === */
-.service-icons-strip{ display:flex; gap:20px; align-items:center; justify-content:center; padding:14px 0 0; flex-wrap:wrap; }
-.service-icon{ display:flex; align-items:center; gap:8px; padding:8px 12px; border-radius:12px; background:rgba(6,47,97,.05); }
-.service-icon span{ font-weight:700; color:#062f61; }
-#header-keywords{ display:flex; gap:12px; align-items:center; justify-content:center; padding:8px 0 0; }
-#header-keywords .keyword{ font-weight:800; letter-spacing:.6px; }
-.services .card p{ font-weight:600; color:#1c2d44; }
-#airport .card, #airport .box, #airport .field, #airport .outline{ border-width:4px !important; }
-#airport{ position:relative; overflow:hidden; }
-#airport::before{ content:""; position:absolute; left:0; right:0; top:-120px; height:320px; background: linear-gradient(180deg, rgba(6,47,97,0.12), rgba(6,47,97,0)); pointer-events:none; }
-header .brand, header .logo, header .brand-name{ display:inline-flex; align-items:center; gap:10px; }
-header .brand-name{ font-weight:900; color:#062f61; text-decoration:none; letter-spacing:.6px; }
+/* === Service card icons (inside boxes) === */
+.card-titlebar{ display:flex; align-items:center; gap:10px; margin-top:6px; }
+.svc-icon{ flex:0 0 auto; color: var(--deep); }
+
+/* === Adjust service card icon layout: icon above text === */
+.card-header{ display:flex; flex-direction:column; align-items:center; gap:8px; margin-bottom:8px; }
+.card-header .svc-icon{ color: var(--deep); width:36px; height:36px; }
+.services .card h3{ text-align:center; }
